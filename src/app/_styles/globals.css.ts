@@ -1,4 +1,5 @@
 import { globalStyle } from '@vanilla-extract/css';
+import { vars } from './theme.css';
 
 globalStyle('*', {
   margin: 0,
@@ -6,27 +7,8 @@ globalStyle('*', {
   boxSizing: 'border-box',
 });
 
-globalStyle('html', {
-  scrollBehavior: 'smooth',
-});
-
-globalStyle('body', {
-  fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
-  backgroundColor: '#0a0a0a',
-  color: '#ffffff',
-  overflowX: 'hidden',
-  lineHeight: 1.6,
-});
-
-globalStyle('::-webkit-scrollbar', {
-  width: '8px',
-});
-
-globalStyle('::-webkit-scrollbar-track', {
-  background: '#1a1a1a',
-});
-
-globalStyle('::-webkit-scrollbar-thumb', {
-  background: 'linear-gradient(180deg, #00ff88, #0088ff)',
-  borderRadius: '4px',
+globalStyle('html, body', {
+  fontFamily: 'system-ui, -apple-system, sans-serif',
+  lineHeight: 1.5,
+  color: vars.color.gray[800],
 });
