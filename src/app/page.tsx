@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import { ThreeBackground } from './_components/ThreeBackground';
 import * as styles from './_styles/components.css';
+import Image from 'next/image';
 
 export default function HomePage() {
   const [scrollY, setScrollY] = useState(0);
@@ -94,7 +95,8 @@ export default function HomePage() {
           <div className={styles.navContainer}>
             <div className={styles.logo}>
               <div className={styles.logoIcon}>
-                <Code2 className="w-6 h-6 text-black" />
+                {/* <Code2 className="w-6 h-6 text-black" /> */}
+                <Image src={'/devtracker.png'} width={50} height={50} alt="MainIcon" />
               </div>
               DevTracker
             </div>
