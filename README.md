@@ -1,37 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DevTracker - 공식 홈페이지
 
-## Getting Started
+IT 프리랜서와 1인 개발자를 위한 전문적인 시간 관리 솔루션 DevTracker의 공식 홈페이지입니다.
 
-First, run the development server:
+## 🚀 기술 스택
+
+- **Next.js 14** (App Router)
+- **React 18** + **TypeScript**
+- **Vanilla Extract** (Type-safe CSS-in-JS)
+- **Three.js** (3D 배경 효과)
+- **Lucide React** (아이콘)
+
+## 📦 설치 및 실행
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# 프로젝트 생성
+npx create-next-app@latest devtracker-homepage --typescript --tailwind --eslint --app --src-dir
+
+# 의존성 설치 (위의 package.json 내용으로 교체 후)
+pnpm install
+
+# 개발 서버 실행
+pnpm run dev
+
+# 빌드
+pnpm run build
+
+# 프로덕션 서버 실행
+pnpm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ 주요 특징
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🎨 디자인 컨셉
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Young & Trendy**: 현대적이고 세련된 디자인
+- **Professional**: 공식 홈페이지답게 전문적인 느낌
+- **Tech-inspired**: 개발자를 위한 기술적 요소들
 
-## Learn More
+### 🖥️ 개발자 캐릭터 & 환경
 
-To learn more about Next.js, take a look at the following resources:
+- 실제 코딩 환경을 연상시키는 모니터 화면
+- 실시간 타이핑 효과로 DevTracker 코드 시연
+- 3D 플로팅 아이콘들로 생동감 연출
+- 개발자 아바타와 작업 공간 시각화
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🎯 타겟 사용자
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- IT 프리랜서
+- 1인 개발자
+- 소규모 개발팀
+- 디자이너 & 퍼블리셔
 
-## Deploy on Vercel
+## 🛠️ 개발 가이드
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 폴더 구조
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# devtracker-homepage
+```
+src/
+├── app/
+│   ├── _components/
+│   │   └── ThreeBackground.tsx
+│   └── _styles/
+│       ├── global.css.ts
+│       └── components.css.ts
+│   ├── layout.tsx
+│   └── page.tsx
+```
+
+### 스타일링
+
+- Vanilla Extract를 사용한 Type-safe CSS
+- 컴포넌트별 스타일 모듈화
+- 반응형 디자인 완벽 지원
+
+### 성능 최적화
+
+- Next.js 14 App Router 사용
+- 이미지 최적화 (next/image)
+- 폰트 최적화 (next/font)
+- Three.js 최적화된 렌더링
+
+## 🎨 브랜딩
+
+### 컬러 팔레트
+
+- Primary: `#00ff88` (Neon Green)
+- Secondary: `#0088ff` (Cyber Blue)
+- Accent: `#ff0088` (Hot Pink)
+- Background: Gradient from `#0a0a0a` to `#16213e`
+
+### 타이포그래피
+
+- UI: Inter (Modern & Clean)
+- Code: JetBrains Mono (Developer-friendly)
